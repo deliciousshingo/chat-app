@@ -1,6 +1,8 @@
 <div class="side-bar-header">
   <div class="header-name">
-    <a href="#">shingo</a>
+    <%= link_to edit_user_path(current_user) do %>
+      <%= current_user.name %>
+    <% end %>
   </div>
   <div class="create-form">
     <a href="#">チャットを作成する</a>
